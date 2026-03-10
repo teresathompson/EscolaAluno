@@ -10,13 +10,13 @@ public class Escola {
         Avaliacao alunoGrad = new AlunoGraduacao("Juanita", 2, 7);
         Avaliacao alunoPos = new AlunoPosGraduacao("Maria", 3, 7);
 
-        System.out.println("Média de Juanita - aluna de graduação: " +   alunoGrad.calcularMedia()+ "\n");
-        System.out.println("Média de Maria - aluna de pós-graduação: " + alunoPos.calcularMedia());
+        System.out.println("Média de Juanita - aluna de graduação: " +   alunoGrad.calcularMedia() + "\n");
+        System.out.println("Média de Maria - aluna de pós-graduação: " + alunoPos.calcularMedia() + "\n");
 
         
         AlunoGraduacao alunoGraduacao = new AlunoGraduacao("James", 4, 8);        
 
-        System.out.println("Média de " + alunoGraduacao.getNome() +   " aluna (0) de pós-graduação: " + alunoPos.calcularMedia());
+        System.out.println("Média de " + alunoGraduacao.getNome() +   " aluna (o) de  graduação: " + alunoPos.calcularMedia() + "\n");
             
         };
     }
