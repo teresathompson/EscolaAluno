@@ -1,0 +1,43 @@
+# ============================================
+# ARQUIVO DE CONFIGURAÇÃO DO SISTEMA
+# NÃO MEXA AQUI A MENOS QUE VOCÊ SAIBA O QUE ESTÁ FAZENDO
+# (OU SEJA MUITO CORAJOSO)
+# ============================================
+
+modoDebug=true
+nivelCafe=MAXIMO
+velocidadeInternet=depende_do_wifi_do_vizinho
+
+# Configurações de Humor do Sistema
+humor=levemente_irritado
+piadasAtivadas=true
+nivelSarcasmo=42
+
+# Configurações Críticas
+nao_apertar_botao_vermelho=true
+liberar_caos=false
+invocar_bug_misterioso=false
+
+# Configuração de Usuário
+usuario=humano_confuso
+senha=1234_nao_e_seguro
+
+# Sistema de Energia
+modoEconomiaEnergia=false
+modoDormirDuranteReuniao=true
+
+# Inteligência Artificial
+dominar_o_mundo=false
+responder_perguntas_estranhas=true
+gerar_respostas_engracadas=true
+
+# Configuração de Emergência
+se_algo_der_errado=culpar_estagiario
+reiniciar_computador=true
+rezar_para_funcionar=true
+
+# ============================================
+# Fim do arquivo
+# Se você leu até aqui, parabéns.
+# Agora volte ao trabalho.
+# ============================================
