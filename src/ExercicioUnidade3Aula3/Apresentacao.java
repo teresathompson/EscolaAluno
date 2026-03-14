@@ -22,9 +22,13 @@ public class Apresentacao {
 
         // Criando um objeto do tipo Aluno e chamando o método apresentar() para exibir
         // as informações do aluno
-        Aluno aluno1 = new Aluno("Lais", 1234);
+        Aluno aluno1 = new Aluno("Lais", 1234, 12);
         // Chamando o método apresentar() para exibir as informações do aluno
         aluno1.apresentar();
+
+        aluno1.setNota(8.5);
+
+        aluno1.exibirInformacoes();
     }
 
 }
