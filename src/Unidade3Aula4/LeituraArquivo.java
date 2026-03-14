@@ -3,12 +3,13 @@ package Unidade3Aula4;
 import java.io.File;
 
 import java.io.FileNotFoundException;
-
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class LeituraArquivo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner scanner = null;
 
@@ -19,8 +20,12 @@ public class LeituraArquivo {
 
             File arquivo = new File("arquivo.txt");
 
-            // Criando um objeto Scanner para ler o conteúdo do arquivo
-            scanner = new Scanner(arquivo);
+            // Criando um Scanner para ler o conteúdo do arquivo, especificando o charset
+            // UTF-8
+            // evitando problemas de codificação, especialmente em sistemas operacionais que
+            // não usam UTF-8 por padrão
+
+            scanner = new Scanner(arquivo, StandardCharsets.UTF_8);
 
             // Lendo o conteúdo do arquivo linha por linha e exibindo no console
             while (scanner.hasNextLine()) {
@@ -32,7 +37,6 @@ public class LeituraArquivo {
         } catch (FileNotFoundException e) {
 
             System.out.println("Erro: O arquivo não foi encontrado.");
-            System.out.println(new File("arquivo.txt").getAbsolutePath());
 
         } finally {
 
