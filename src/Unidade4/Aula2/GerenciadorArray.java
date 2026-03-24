@@ -1,7 +1,5 @@
 package Unidade4.Aula2;
 
-import java.util.ArrayList;
-
 public class GerenciadorArray {
     private int[] array;
     private int tamanho;
