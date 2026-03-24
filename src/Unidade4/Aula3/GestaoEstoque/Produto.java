@@ -67,22 +67,6 @@ public class Produto {
         }
     }
 
-    public void atualizarPreco(double novoPreco) {
-        setPreco(novoPreco);
-    }
-
-    public void atualizarDescricao(String novaDescricao) {
-        setDescricao(novaDescricao);
-    }
-
-    public void atualizarCodigo(String novoCodigo) {
-        setCodigo(novoCodigo);
-    }
-
-    public void atualizarNome(String novoNome) {
-        setNome(novoNome);
-    }
-
     public void atualizarProduto(String novoNome, int novaQuantidade, double novoPreco, String novoCodigo,
             String novaDescricao) {
         setNome(novoNome);
@@ -114,11 +98,6 @@ public class Produto {
                 Double.parseDouble(partes[3].trim()),
                 partes[0].trim(),
                 partes[1].trim());
-    }
-
-    public void exibirEstoque() {
-        System.out.println("Produto: " + nome);
-        System.out.println("Quantidade em estoque: " + quantidade);
     }
 
     public void exibirProduto() {

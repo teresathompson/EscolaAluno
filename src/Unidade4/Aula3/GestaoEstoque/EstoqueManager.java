@@ -101,11 +101,11 @@ public class EstoqueManager {
             arquivoTemp.renameTo(arquivo);
         }
 
-        System.out.println("Produto atualizado com sucesso. \n");
+        System.out.println("\u001B[32mProduto atualizado com sucesso.\u001B[0m\n");
     }
 
     public static void gerarRelatorioEstoqueBaixo() throws IOException {
-        System.out.println("Relatório de Estoque Baixo:");
+        System.out.println("Relatório de Estoque Baixo: \n");
         garantirArquivoEstoque();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(ARQUIVO_ESTOQUE))) {
@@ -115,7 +115,7 @@ public class EstoqueManager {
                 Produto produto = Produto.deLinhaArquivo(linha);
 
                 if (produto.possuiEstoqueBaixo()) {
-                    System.out.println(produto.paraLinhaArquivo());
+                    System.out.println(produto.paraLinhaArquivo() + "\n");
                 }
             }
         }
