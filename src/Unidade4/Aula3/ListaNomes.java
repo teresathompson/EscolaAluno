@@ -35,6 +35,7 @@ class ListaNomes {
     // iterar sobre a lista de nomes e imprimir cada nome na tela usando o método
     // println da classe System
     public void imprimirLista() {
+        // Imprime uma mensagem indicando que a lista de nomes está sendo exibida
         for (String nome : nomes) {
             System.out.println(nome);
         }
