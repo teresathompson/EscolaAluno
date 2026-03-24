@@ -1,0 +1,65 @@
+# =====================================
+# SISTEMA VETERINÁRIO ULTRA AVANÇADO 
+# =====================================
+
+clinica_nome = "Clínica Vida+ Pet"
+veterinario_responsavel = "Dr(a). Sobrevivente do Plantão"
+nivel_estresse = 9000
+
+# Pacientes do dia
+paciente_1 = Rex (cachorro) - acha que é gente
+paciente_2 = Mimi (gata) - odeia todo mundo
+paciente_3 = Thor (cachorro) - emergência eterna
+paciente_4 = Luna (coelho) - fingindo que está tudo bem
+
+# Estado geral dos pacientes
+Rex = abanando o rabo e feliz
+Mimi = pronta para atacar 
+Thor = drama + gritaria + caos
+Luna = silêncio suspeito
+
+# Configurações do sistema
+modo_emergencia = sempre_ativo
+latidos_por_minuto = 120
+miados_por_minuto = infinito
+tentativas_de_mordida = alto
+
+# Equipamentos
+termometro = desaparecido
+estetoscopio = no bolso errado
+seringa = cadê???
+luvas = acabando
+
+# Diagnósticos automáticos
+se animal_estiver_calmo = "algo está errado"
+se animal_estiver_agitado = "normal"
+se dono_diz 'é só uma coisinha' = "prepare-se para cirurgia"
+
+# Interações com tutores
+frase_comum_1 = "Ele nunca fez isso antes!"
+frase_comum_2 = "Doutor(a), foi do nada!"
+frase_comum_3 = "Pode parcelar?"
+
+# Sistema financeiro
+pagamento = "depois eu volto"
+desconto = sempre_pedem
+lucro = variável (quase nunca)
+
+# Saúde do veterinário
+cafe = obrigatório 
+sono = inexistente
+energia = 10%
+paciência = testando limites
+
+# Segurança
+risco_de_mordida = alto
+risco_de_arranhão = altíssimo
+probabilidade_de_urina_na_roupa = 75%
+
+# Mensagens do sistema
+mensagem_sucesso = "Paciente sobreviveu e você também!"
+mensagem_erro = "Foi pra cima de você... boa sorte"
+
+# Observações finais
+status = "Funcionando no improviso"
+nota = "Se o animal deixar, tá ótimo"

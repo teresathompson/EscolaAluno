@@ -1,0 +1,1 @@
+Primeira linha. Teste de gravação em arquivo.
