@@ -1,0 +1,33 @@
+
+CREATE TABLE livros (
+    id_livro INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    ano_publicacao INT,
+    numero_exemplares INT NOT NULL CHECK (numero_exemplares >= 0)
+);
+
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(150),
+    telefone VARCHAR(20) UNIQUE
+);
+
+CREATE TABLE emprestimos (
+    id_emprestimo INT AUTO_INCREMENT PRIMARY KEY,
+    id_usuario INT NOT NULL,
+    id_livro INT NOT NULL,
+    data_emprestimo DATE NOT NULL DEFAULT (CURRENT_DATE),
+    data_devolucao_prevista DATE NOT NULL,
+
+    CONSTRAINT fk_usuario
+        FOREIGN KEY (id_usuario)
+        REFERENCES usuarios(id_usuario)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_livro
+        FOREIGN KEY (id_livro)
+        REFERENCES livros(id_livro)
+        ON DELETE CASCADE
+);
